@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+
+ext {
+    kotlin_version = '1.2.21'
+    timber = '4.6.0'
+    playServices = '11.4.2'
+    constraint = '1.0.2'
+    junit = '4.12'
+    espresso = '3.0.1'
+    rx2FastAndroidNetworking = '1.0.0'
+    supportLibraryVersion = '27.0.2'
+    daggerVersion = '2.13'
+    retrofitVersion = '2.2.0'
+    okHttpVersion = '3.7.0'
+    buildToolsVersion = '26.0.2'
+    compileSdkVersion = 26
+    minSdkVersion = 18
+    versionCode = 1
+    butterKnife = '8.6.0'
+    versionName = '1.0'
+    rxjava2Adapter = '1.0.0'
+    practicalrecyclerview = '1.1.5'
+    rxandroid = '2.0.1'
+    rxjava = '2.1.0'
+    calligraphy = '2.3.0'
+    androidGif = '1.2.7'
+    applicationId = "com.example.air.cryptocurrency"
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+}
+
+buildscript {
+    ext.kotlin_version = '1.2.21'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
